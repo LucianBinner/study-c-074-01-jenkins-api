@@ -1,7 +1,10 @@
+const { generateRadomNumber } = require("../helpers/main-herlpers")
+
 async function getDataController(req, res) {
     try {
+        const randomNumber = generateRadomNumber()
         res.status(200).json({
-            ok: true
+            randomNumber,
         })
     } catch (error) {
         res.status(500).json({
