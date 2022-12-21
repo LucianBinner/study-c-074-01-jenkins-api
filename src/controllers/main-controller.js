@@ -1,4 +1,4 @@
-const { generateRadomNumber } = require("../helpers/main-herlpers")
+const { generateRadomNumber } = require("../helpers/main-helpers")
 
 async function getDataController(req, res) {
     try {
